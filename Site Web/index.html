@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Mon Vélo Bleu</title>
+        <meta name="description" content="Mon Vélo Bleu - Réservez votre vélo où que vous soyez à Herblay !">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://kit.fontawesome.com/1fe76027ec.js"></script>
+
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+
+
+
+
+
+
+    <body>
+        
+    <div id="blocPage" class="container-fluid">
+
+            <!-- ------------------------------------- -->
+     
+        <header id="navbar" class="row justify-content-around align-items-center">
+            <div id="navTitle" class="col-sm-9 col-md-8 col-lg-4 col-xl-4">
+                <h1>Mon Vélo Bleu</h1>
+            </div>
+            <div id="navText" class="col-sm-9 col-md-8 col-lg-4 col-xl-4">
+                <p>Réservez votre vélo où que vous soyez à Herblay !</p>
+            </div>           
+        </header>
+
+            <!-- ------------------------------------- -->
+
+        <section id="slider">
+                <div id="slideshowContainer">
+                    <div id="slideshow">
+
+                       <div id="slideFive" class="mySlides">
+                            <img src="images/pub.jpg" alt= "..." id="slideFiveImg" class="slideshow_img five">
+                            <div class="text">Slide 5</div>
+                        </div>
+                        <div id="slideSix" class="mySlides">
+                            <img src="images/nuage.png" alt= "..." id="slideSixImg" class="slideshow_img six">
+                            <div class="text">Slide 6</div>
+                        </div>
+                        <div id="slideSeven" class="mySlides">
+                            <img src="images/velo.jpg" alt= "..." id="slideSevenImg" class="slideshow_img seven">
+                            <div class="text">Slide 7</div>
+                        </div> 
+                        <div id="slideOne" class="mySlides">
+                            <img src="images/pub.jpg" alt= "..." id="slideOneImg" class="slideshow_img one">
+                            <div class="text">Slide 1</div>
+                        </div>
+                        <div id="slideTwo" class="mySlides">
+                            <img src="images/velo.jpg" alt= "..." id="slideTwoImg" class="slideshow_img two">
+                            <div class="text">Slide 2</div>
+                        </div>
+                        <div id="slideThree" class="mySlides">
+                            <img src="images/roue.png" alt= "..." id="slideThreeImg" class="slideshow_img three">
+                            <div class="text">Slide 3</div>
+                        </div>
+                        <div id="slideFour" class="mySlides">
+                            <img src="images/city.png" alt= "..." id="slideFourImg" class="slideshow_img four">
+                            <div class="text">Slide 4</div>
+                        </div> 
+
+                    </div>                  
+                </div>
+
+
+                <button type="button" id="prevBtn" class="btn" href="#"><i class="fas fa-step-backward"></i></button>
+                <button type="button" id="nextBtn" class="btn" href="#"><i class="fas fa-step-forward"></i></button>
+
+
+                <div id="btnGroupA">
+                    <div class="btn-group">
+                        <a id="play" class="btn btn-success" href="#"><i class="fas fa-play"></i></a>
+                        <a id="stop" href="#" class="btn btn-danger"><i class="fas fa-stop"></i></a>
+                        <a id="btnUno" class="btn btn-info" href="#">1</a>
+                        <a class="btn btn-info" href="#">2</a>
+                        <a class="btn btn-info" href="#">3</a>
+                        <a class="btn btn-info" href="#">4</a>
+                        <a class="btn btn-info" href="#">5</a>
+                        <a class="btn btn-info" href="#">6</a>
+                        <a class="btn btn-info" href="#">7</a>
+                    </div>
+                </div>
+
+               
+                    
+ 
+
+        </section>
+
+            <!-- ------------------------------------- -->
+
+            <section id="map" class="row">               
+                <!-- Div comprenant la Google Map -->              
+                <div id="mapContenair" class="col-sm-12 col-md-12 col-lg-12 col-xl-12"></div>
+
+                <fieldset id="formContenair" class="col-sm-10 col-md-6 col-lg-4 col-xl-4">
+                    <aside>
+                        <p>Adresse : x</p>
+                        <p>x places</p>
+                        <p>x vélo(s) disponible(s)</p>
+                    </aside>
+                    <form id="Form_contenair">
+                          <p class="form_content">Nom : 
+                            <input required type="text" name="username" id="contact_name" placeholder="Penne" class="nomInput">
+                          </p>
+                          <p class="form_content">Prénom :
+                            <input required type="text" name="username" id="contact_name" placeholder="Thibault">
+                          </p>
+                          <p class="form_content button" id="mapButton">
+                            <button id="resaBtn" type="button" class="btn btn-info">Réserver</button>
+                            </p>
+                    </form>
+                </fieldset>
+
+                <div id="signature" class="">Signez ici :
+                    <canvas id="canvas"  width="350" height="150">Truc qui doit s'afficher...</canvas>
+                    <div id="optionsResa">
+                        <button id="validate">Valider</button>
+                        <button id="restart">Recommencer</button>
+                        <button id="cancel">Annuler</button>
+                    </div> 
+                </div>
+            </section> 
+
+            <!-- ------------------------------------- -->
+
+            <section id="reservation" class="row">
+                <div id="resaInfo" class="col-sm-9 col-md-8 col-lg-4 col-xl-4">
+                    <p>Vélo réservé à la station Gare SNCF pour Musashi Myamoto</p>
+                    <div id="resaCompteur"></div>
+                </div>
+            </section>
+
+            <!-- ------------------------------------- -->
+
+            <footer id="contact" class="row">
+                <div id="contactInfo" class="col-11">
+                    <p>"Mon Vélo Bleu" / Adresse : 20 Quai du Génie, 95220 HERBLAY / Tél : 06 76 80 03 31</p>                  
+                </div>
+                <div id="backUp" class="col-1">
+                    <a href="#" title="..."><i class="fas fa-arrow-alt-circle-up"></i></a>
+                </div>
+            </footer>
+
+            <!-- ------------------------------------- -->
+
+    </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <script src="js/ajax.js"></script>
+        <script type="text/javascript" src="js/diaporama.js"></script>
+        <script type="text/javascript" src ="js/canvas.js"></script>
+
+
+    </body>
+ </html>    
+
+
+
+
+
+
